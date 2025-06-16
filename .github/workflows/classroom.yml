@@ -1,6 +1,6 @@
 name: Autograding - Artifacts Workflow
 on:
-  push:
+  rerepository_dispatch::
   workflow_dispatch:
 permissions:
   contents: read
