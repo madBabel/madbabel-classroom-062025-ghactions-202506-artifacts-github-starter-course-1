@@ -1,30 +1,30 @@
-# 🧪 Ejercicio: Compartiendo archivos entre trabajos con artefactos
+# Ejercicio: Compartiendo archivos entre trabajos con artefactos
 
-## 🎯 Objetivo
+##  Objetivo
 
 Explorar cómo usar artefactos en GitHub Actions para compartir resultados (como archivos de cobertura de test y builds) entre distintos trabajos del mismo flujo.
 
 ---
 
-## 🛠 Tareas
+##  Tareas
 
 ### 1. Crea una aplicación React
 
 Desde la raíz del repositorio, ejecuta:
 
 ```bash
-mkdir 15-artifacts
-cd 15-artifacts
+mkdir artifacts
+cd artifacts
 npx create-react-app --template typescript react-app
 ```
 
-Esto generará una aplicación React con TypeScript dentro de `15-artifacts/react-app`.
+Esto generará una aplicación React con TypeScript dentro de `artifacts/react-app`.
 
 ---
 
 ### 2. Crea el archivo `.github/workflows/artifacts.yaml` con el siguiente flujo:
 
-### 📦 Trabajo: `test-build`
+###  Trabajo: `test-build`
 
 - Corre sobre `ubuntu-latest`.
 - Define `artifacts/react-app` como directorio de trabajo predeterminado.
